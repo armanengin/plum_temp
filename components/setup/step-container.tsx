@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card"
 import { FC, useRef } from "react"
 
-export const SETUP_STEP_COUNT = 3
+export const SETUP_STEP_COUNT = 1
 
 interface StepContainerProps {
   stepDescription: string
@@ -49,9 +49,9 @@ export const StepContainer: FC<StepContainerProps> = ({
         <CardTitle className="flex justify-between">
           <div>{stepTitle}</div>
 
-          <div className="text-sm">
+          {/* <div className="text-sm">
             {stepNum} / {SETUP_STEP_COUNT}
-          </div>
+          </div> */}
         </CardTitle>
 
         <CardDescription>{stepDescription}</CardDescription>
